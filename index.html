@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD APLICANDO JAVASCRIPT PURO
+    </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <h1 class="title">CLUD REALIZADO CON JAVASCRIPT PURO</h1>
+    <table class="borde">
+        <tr>
+            <td class="data">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Nombre Completo*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullNombre">
+                    </div>
+                    <div>
+                        <label>Codigo</label>
+                        <input type="text" name="empCode" id="emCodigo">
+                    </div>
+                    <div>
+                        <label>Salario</label>
+                        <input type="text" name="salary" id="salario">
+                    </div>
+                    <div>
+                        <label>Ciudad</label>
+                        <input type="text" name="city" id="ciudad">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Enviar" class="boton">
+                    </div>
+                </form>
+            </td>
+            <td class="result">
+                <table class="list" id="employeeList">
+                    <thead >
+                        <tr>
+                            <th>Nombre Completo</th>
+                            <th>Codigo</th>
+                            <th>Salario</th>
+                            <th>Ciudad</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
